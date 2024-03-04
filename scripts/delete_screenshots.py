@@ -1,7 +1,8 @@
 import os
 
 def delete_screenshots():
-    screenshots_dir = os.path.expanduser("~/Screenshots")
+    pictures_dir = os.path.expanduser("~/Pictures")
+    screenshots_dir = os.path.join(pictures_dir, "Screenshots")
     
     if not os.path.exists(screenshots_dir):
         print("Screenshots directory does not exist.")
